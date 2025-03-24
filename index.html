@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="livro.css">
+    <link rel="icon" href="Imagens/principe.png">
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+        </style>
+        
+    
+    <title> Litera.</title>
+</head>
+
+<body>
+
+    
+ 
+    
+    <header>
+  
+        <h1>
+            <a href="/" class="logo">
+                <a href="index.html" class="logo">
+                <img src="logo/logo novo.png" width="450px">
+            </a>
+    </h1> 
+           </header>
+ 
+
+<nav class="navbar">
+   
+<ul>
+    <a href="index.html"> Home </a></li>
+    <li> <a href="galeria.html" target="_blank"> Galeria </a></li>
+    <li> <a href="obras.html" target="_blank"> Obras/Autores </a></li>
+    <li> <a href="curiosidades.html" target="_blank" > Curiosidades</a></li>
+    <li> <a href="cadastro.html" > Cadastro </a></li>
+    <div class="social-icons">
+      
+   
+
+
+
+
+
+
+
+</ul>
+
+
+
+
+
+
+<h3>
+
+    "A primeira coisa que nos diz uma obra de arte é que o mundo da liberdade é possível,<br>
+     e isso nos dá força para lutar contra o mundo da opressão."
+
+</h3>
+
+<img src="Imagens/principe.png" width="400px">
+
+
+
+
+ 
+
+<h2>
+A História da Literatura Clássica
+
+</h2>
+
+<p>
+    A literatura clássica é um termo que se refere a um conjunto de obras literárias que são consideradas como fundamentais e de grande importância dentro de uma determinada cultura ou período histórico.<br>
+    
+    Essas obras são consideradas clássicas por sua relevância artística, temática e estilística, e muitas vezes são estudadas e apreciadas ao longo dos séculos.<br>
+
+    A literatura clássica apresenta uma série de características distintas que a diferenciam de outros tipos de literatura. Uma das principais características é a sua atemporalidade, ou seja, a capacidade de permanecer relevante e significativa ao longo do tempo. As obras clássicas são capazes de abordar temas universais e explorar a condição humana de uma forma profunda e duradoura.
+</p>
+<p> A Bíblia em latim foi o primeiro livro impresso no mundo. E só foi possível graças à invenção da imprensa, pelo alemão Johannes Gutenberg.
+
+
+    Em 1455, foram impressas as 641 páginas da Bíblia em latim, com letras forjadas em chumbo e arranjadas manualmente.
+    
+    
+    O trabalho da primeira Bíblia começou em 23 de fevereiro de 1455 e demorou 5 anos. Ao todo foram feitos 300 exemplares do livro.</p>
+
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="Imagens/slide-show/guttenberg.jpg" style="width:60%">
+      <div class="text">.</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="Imagens/slide-show/prensa.jpg" style="width:60%">
+      <div class="text">.</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="Imagens/slide-show/biblia.jpg" style="width:60%">
+      <div class="text">.</div>
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+  </div>
+
+  
+
+      <script>
+          var slideIndex = 1;
+      showSlides(slideIndex);
+
+      // Next/previous controls
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      // Thumbnail image controls
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1} 
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none"; 
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block"; 
+        dots[slideIndex-1].className += " active";
+      }
+
+      </script>
+
+
+  
+  <script>
+      var slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none"; 
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1} 
+          slides[slideIndex-1].style.display = "block"; 
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+  </script>
+
+<video width="300" controls>
+    <source src="Imagens/video/Como a prensa de Gutenberg mudou o mundo COMPRIDO.mp4" type="video/mp4">
+    Seu navegador não suporta o elemento de vídeo.
+</video>
+<figcaption> Como a prensa de Gutenberg mudou o mundo</figcaption>
+</body>
+
+
+<div class="centro">
+<p> Confira a seguir os 10 Livros considerados clássicos da literatura mundial:</p>
+</div>
+
+<div id="centro"></div>
+<div class="imagem tamanho"></div>
+
+<h2>
+O Triste fim de Policarpo Quaresma 
+</h2>
+<div>
+<img src="Imagens/02-Policarpo.jpg" width="800px">
+</div>
+<p>
+    Publicado originalmente em folhetim, em 1911, esta obra de Lima Barreto é essencial para compreender um Brasil que, embora buscasse criar uma identidade nacional para a recém-declarada República, trazia intactas muitas das características da antiga sociedade colonial. 
+<h3>
+    "Brancos, pretos, mulatos, caboclos, gente de todas as cores e de todos os sentimentos, gente que se tinha metido em tal aventura pelo hábito de obedecer, gente inteiramente estranha à questão em debate, gente arrancada à força aos lares ou à calaçaria das ruas, pequeninos, tenros, ou que se haviam alistado por miséria; gente ignara, simples, às vezes cruel e perversa como crianças inconscientes; às vezes, boa e dócil como um cordeiro, mas enfim gente sem responsabilidade, sem anseio político, sem vontade própria…"
+
+</h3>
+<div class="vl"></div>
+
+</p>
+
+<h2>
+O Alienista 
+</h2>
+<div id="centro"></div>
+<img src="Imagens/03-Alienista.jpg" width="900px">
+
+<p>
+    Obstinado e fatalmente fiel à ciência, o médico não permitirá que nada – nem a população, nem o Estado, nem o senso comum – impeça sua nobre investigação sobre a razão humana.
+
+    Publicada pela primeira vez em 1882, esta novela curta e sagaz foi uma das obras mais impactantes de Machado de Assis, um marco de sua voz questionadora e irônica e de sua visão tão certeira sobre questões inerentemente humanas.
+
+    Com quantos doidos se faz uma cidadezinha? É o que está prestes a investigar o ilustre Dr. Simão Bacamarte, renomado médico com estudos no exterior, que funda na vila de Itaguaí a Casa Verde, instituto onde pretende estudar e tratar todos os que sofrem de transtornos mentais. Todo tipo de gente é enviado aos cuidados do doutor, que passa também a enxergar em seus vizinhos e conhecidos o perigoso traço da loucura.
+</p>
+
+<h3>
+    "A loucura, objeto dos meus estudos, era até agora uma ilha perdida no oceano da razão; começo a suspeitar que é um continente."
+
+
+</h3>
+
+</p>
+
+<h2>
+Odisseia (Homero) 
+</h2>
+<div class="centro"></div>
+<img src="Imagens/04-Odisséia.jpg"width="900px">
+
+<p>
+    Odisseia é um poema épico, escrito por Homero, que narra o percurso atribulado do herói Ulisses para voltar para casa depois da Guerra de Troia. Considerada a segunda obra da literatura ocidental, a Odisseia integra o início do cânone literário da região.
+
+    Juntamente com a Ilíada, do mesmo autor, faz parte das leituras fundamentais da Grécia Antiga que continuam influenciando nossas narrativas e imaginário coletivo.
+    
+    Ulisses, herói grego conhecido pelos seus dons de raciocínio e discurso, tenta navegar até casa depois da vitória na guerra de Troia. Atormentado por Poseidon, deus dos mares, e protegido por Atena durante toda a jornada, enfrenta vários obstáculos e perigos, tentando voltar para Ítaca e para os braços da mulher, Penélope.
+</p>
+<h3>
+    “De todas as criaturas que respiram e se movem sobre a terra, nada é criado que seja mais fraco do que o homem.” 
+</h3>
+
+<h2>
+Moby Dick (1851)
+</h2>
+<div id="centro"></div>
+<img src="Imagens/05-Moby Dick.jpg" width="900px">
+
+<p>
+    Moby Dick é um romance do escritor norte-americano Herman Melville, publicado em 1851. Considerado um clássico da literatura ocidental, é composto por 135 capítulos e aborda temas como o poder, a luta entre o bem e o mal, assim como entre a razão e a loucura.
+
+    Conta a história do navio baleeiro Pequod, comandado pelo capitão Ahab, determinado a se vingar de uma lendária baleia branca conhecida como Moby Dick.
+</p>
+
+<h3>
+    “Mas de súbito, ao espreitar mais e mais as profundidades, ele viu bem longe, lá embaixo, uma branca mancha vivente, não maior do que uma doninha branca, subindo com admirável celeridade e aumentando ao emergir, até que se virou, e então se viram claramente suas longas e arqueadas fieiras de dentes brancos e brilhantes, ascendendo do fundo indistinguível. Era a oba aberta de Moby Dick e sua curva mandíbula, estando seu vasto e sombreado corpanzil ainda semiconfundido com o azul do mar.”
+</h3>
+
+<h2>
+A Metamorfose 
+</h2>
+<div id="centro"></div>
+<img src="Imagens/06-Metamorfose.jpg" width="900px">
+
+<p>
+    A Metamorfose é um pequeno livro de autoria do escritor austro-húngaro Franz Kafka. Apesar do texto ter sido feito em 1912 e concluído em apenas 20 dias, ele só foi publicado no ano de 1915.
+
+    Escrita originalmente em alemão, a novela conta a história do caixeiro-viajante Gregor, que um dia acorda metamorfoseado em um enorme inseto.
+    
+    Uma das obras mais marcantes e inesquecíveis da literatura universal, A Metamorfose continua conquistando leitores de várias gerações. Embora a narrativa não ofereça uma explicação aparente para tudo que assistimos, ela contém profundas reflexões filosóficas e sociais.
+
+
+</p>
+
+<h3>
+    "Quando certa manhã Gregor Samsa acordou de sonhos intranquilos, encontrou-se em sua cama metamorfoseado num inseto monstruoso."
+</h3>
+
+<h2>
+O Pequeno Principe
+</h2>
+<div id="centro"></div>
+<img src="Imagens/07-Pequeno Princípe.jpg" width="900px">
+<p>
+    O Pequeno Príncipe é uma obra literária do escritor francês Antoine de Saint-Exupéry, que conta a história da amizade entre um homem frustrado por ninguém compreender os seus desenhos, com um principezinho que habita um asteroide no espaço.
+
+    O título original é Le Petit Prince, e o livro foi publicado pela primeira vez em 1943, nos Estados Unidos.
+    
+    Esta obra é marcada pelo seu alto teor filosófico e poético, mesmo sendo considerada a princípio uma literatura para crianças.
+    
+    O Pequeno Príncipe é o terceiro livro mais traduzido do mundo, contabilizando aproximadamente mais de 160 idiomas, e um dos mais vendidos por todo o planeta. O clássico ganhou diversas adaptações, seja no cinema ou em espetáculos teatrais e musicais.
+</p>
+<h3>
+    "Tu te tornas eternamente responsável por aquilo que cativas."
+</h3>
+
+<h2>
+A Hora da Estrela
+</h2>
+<div id="centro"></div>
+<img src="Imagens/08-Hora da Estrela.jpg" width="900px">
+<p>
+    A Hora da Estrela é um livro da renomada escritora Clarice Lispector. Publicado em 1977, esse é seu último romance.
+
+    Conta sobre Macabéa, uma mulher nordestina que vai para o Rio de Janeiro em busca de oportunidades.
+    
+    Por meio do narrador fictício Rodrigo S. M., a autora apresenta a história instigante e intimista dessa personagem que tem sua "inocência pisada", como descreve a própria Clarice.
+    
+    Talvez por ser um de seus romances com estrutura narrativa mais compreensível e linear, tornou-se uma das obras mais famosas e acessíveis para se começar a ler Clarice.
+
+    livro começa com Rodrigo S. M., (um escritor e narrador criado por Clarice Lispector) refletindo sobre o papel da escrita e da palavra. Ele usa o primeiro capítulo para justificar o próprio livro. O chamado para a escrita é interno, vem de sua própria necessidade.
+
+    Rodrigo S. M. continua a aparecer ao longo do romance, fazendo pequenas intervenções e levantando questões existenciais.
+</p>
+<h3>
+    "Sim, minha força está na solidão. Não tenho medo nem de chuvas tempestivas nem das grandes ventanias soltas, pois eu também sou o escuro da noite.
+</h3>
+
+<h2>
+Ulysses
+</h2>
+<div id="centro"></div>
+<img src="Imagens/09-Ulysses.jpg" width="900px">
+<p>
+    Ulysses é totalmente ligado ao poema épico de Homero, “Odisséia”. O que Joyce faz é uma releitura das características do poema, uma espécie de paródia no estilo de fluxo de consciência. Joyce vai espelhar em seu livro todos os episódios da história de Odisseu, os 10 anos que levou para voltar a Ítaca após a queda de Tróia. Bloom é o Ulisses de Dublin, que vai levar 1 dia inteiro de procrastinação para voltar para casa pois suspeita que sua esposa irá se encontrar com seu amante. Sendo assim, o livro TODO se passa em apenas um dia.
+
+    O autor também vai parodiar com muitos assuntos pertinentes a época em que o livro foi escrito, como por exemplo o antissemitismo que pairava no pré-guerra, as relações sociais, nacionalismo, adultério, sexualidade, intelectualidade, morte e claro, a narrativa.
+    
+    É um livro com muita informação histórica, política e cultural. Além de algumas menções de acontecimentos ou personagens de outras obras do Joyce, como “Dublinenses” e “Retrato do artista quando jovem”. Sem contar que também é uma espécie de autobiografia parodiada. Joyce vai espelhar aqui acontecimentos de sua vida.
+</p>
+<h3>
+    "Os erros são os portais da descoberta"
+</h3>
+
+<h2>
+Crime e Castigo
+</h2>
+<div id="centro"></div>
+<img src="Imagens/10-Crime e Castigo.jpg" width="900px">
+
+<p>
+
+    O personagem principal do livro é Ródion Ramanovich Raskolnikov, um ex-estudante muito inteligente na casa dos vinte anos que vive na miséria num minúsculo apartamento em Pitsburgo.
+
+    O rapaz precisou desistir dos estudos devido às dificuldades financeiras que enfrentava. Ele acredita que está destinado a grandes ações, mas que a miséria o impede de atingir todo o seu potencial.
+    
+    Com problemas econômicos, Raskolnikov recorre à ajuda de uma senhora que empresta a juros altíssimos e maltrata a sua irmã mais nova, de trinta e poucos anos.
+    
+    Convencido de que a velha tem um péssimo caráter e explora as pessoas vulneráveis que lhe pedem ajuda, Raskolnikov decide assassiná-la.
+</p>
+<h3>
+    "Tudo está ao alcance do homem, e tudo lhe escapa, em virtude da sua covardia"
+</h3>
+</div>
+</div>
+
+
+
+
+        
+        
+   
+
+    
+
+    </div>
+    
+    
+    
+    </div>
+    </div>
+ 
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+
+    
+    
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.584189246427!2d-46.64465182385312!3d-23.547453378809408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce584d91ca6d61%3A0x6ba05dbf5f45f24d!2sBiblioteca%20M%C3%A1rio%20de%20Andrade!5e0!3m2!1spt-BR!2sbr!4v1742344200478!5m2!1spt-BR!2sbr" width="2000" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+    <footer>
+        <div class="centro">
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            
+         </div>
+       
+    </div>
+       <copy&> Litera | 2025</copy>
+       
+     
+ 
+    
+    
+    </footer>
+    </body>
+    
+    </html>
